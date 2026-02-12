@@ -2,13 +2,17 @@ import ProductCard from "../components/ProductCard";
 import products from "../data/products";
 import styles from "../style/Products.module.css";
 
-const sections = ["Men", "Women", "Sports"];
+const sections = ["Men", "Women", "Sports", "Shoes", "Accessories"];
 
 const Products = () => {
   return (
     <div className={styles.page}>
       {sections.map((section) => (
-        <section key={section} className={styles.section}>
+        <section
+          key={section}
+          id={`category-${section.toLowerCase()}`}
+          className={styles.section}
+        >
           <div className={styles.sectionHeader}>
             <h2>{section}</h2>
             <button className={styles.seeMore}>See More</button>

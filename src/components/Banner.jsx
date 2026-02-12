@@ -22,28 +22,45 @@ const Banner = () => {
   useEffect(() => {
     const timer = setInterval(() => {
       setCurrent((prev) => (prev === banners.length - 1 ? 0 : prev + 1));
-    }, 2000);
+    }, 3000);
 
     return () => clearInterval(timer);
   }, []);
 
   return (
     <div className={styles.banner}>
-      {banners.map((item, index) => (
-        <div
-          key={index}
-          className={`${styles.slide} ${
-            index === current ? styles.active : ""
-          }`}
-          style={{ backgroundImage: `url(${item.image})` }}
-        >
-          <div className={styles.content}>
-            <h1>{item.title}</h1>
-            <p>{item.subtitle}</p>
-            <button>Shop Now</button>
+      <div
+        className={styles.slidesContainer}
+        style={{ transform: `translateX(-${current * 100}%)` }}
+      >
+        {banners.map((item, index) => (
+          <div
+            key={index}
+            className={styles.slide}
+            style={{ backgroundImage: `url(${item.image})` }}
+          >
+            <div className={styles.content}>
+              <h1>{item.title}</h1>
+              <p>{item.subtitle}</p>
+              <button>Shop Now</button>
+            </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
+      
+      {/* Slide indicators */}
+      <div className={styles.indicators}>
+        {banners.map((_, index) => (
+          <button
+            key={index}
+            className={`${styles.indicator} ${
+              index === current ? styles.active : ""
+            }`}
+            onClick={() => setCurrent(index)}
+            aria-label={`Go to slide ${index + 1}`}
+          />
+        ))}
+      </div>
     </div>
   );
 };

@@ -154,6 +154,110 @@ const products = [
     image:
       "https://images.unsplash.com/photo-1585386959984-a41552231693?w=600&auto=format&fit=crop&q=70",
   },
+
+  // SHOES
+  {
+    id: 16,
+    title: "Classic White Sneakers",
+    category: "Shoes",
+    price: 4299,
+    originalPrice: 6499,
+    rating: 4.7,
+    image:
+      "https://images.unsplash.com/photo-1549298916-b41d501d3772?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 17,
+    title: "Leather Formal Shoes",
+    category: "Shoes",
+    price: 5499,
+    originalPrice: 8499,
+    rating: 4.6,
+    image:
+      "https://images.unsplash.com/photo-1614252235316-8c857d38b5f4?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 18,
+    title: "Canvas Slip-On",
+    category: "Shoes",
+    price: 1999,
+    originalPrice: 2999,
+    rating: 4.5,
+    image:
+      "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 19,
+    title: "Running Shoes Pro",
+    category: "Shoes",
+    price: 6999,
+    originalPrice: 9999,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1600185365926-3a2ce3cdb9eb?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 20,
+    title: "Casual Loafers",
+    category: "Shoes",
+    price: 3299,
+    originalPrice: 4999,
+    rating: 4.4,
+    image:
+      "https://images.unsplash.com/photo-1597045566677-8cf032ed6634?w=600&auto=format&fit=crop&q=70",
+  },
+
+  // ACCESSORIES
+  {
+    id: 21,
+    title: "Leather Belt",
+    category: "Accessories",
+    price: 999,
+    originalPrice: 1599,
+    rating: 4.5,
+    image:
+      "https://images.unsplash.com/photo-1624222247344-550fb60583c2?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 22,
+    title: "Sunglasses Classic",
+    category: "Accessories",
+    price: 2499,
+    originalPrice: 3999,
+    rating: 4.7,
+    image:
+      "https://images.unsplash.com/photo-1572635196237-14b3f281503f?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 23,
+    title: "Premium Watch",
+    category: "Accessories",
+    price: 8999,
+    originalPrice: 12999,
+    rating: 4.8,
+    image:
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 24,
+    title: "Canvas Backpack",
+    category: "Accessories",
+    price: 2799,
+    originalPrice: 4299,
+    rating: 4.6,
+    image:
+      "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=600&auto=format&fit=crop&q=70",
+  },
+  {
+    id: 25,
+    title: "Wool Cap",
+    category: "Accessories",
+    price: 799,
+    originalPrice: 1299,
+    rating: 4.4,
+    image:
+      "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=600&auto=format&fit=crop&q=70",
+  },
 ];
 
 export default products;

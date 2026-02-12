@@ -2,42 +2,71 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 18px 60px;
-  background: #ffffff;
-  border-bottom: 1px solid #eaeaea;
+  padding: 14px 48px;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
 }
 
-/* Logo */
+.logoWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
 .logo {
   color: #ff3f6c;
-  font-size: 24px;
-  font-weight: 600;
+  font-size: 26px;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+  cursor: pointer;
+  transition: color 0.2s ease, transform 0.2s ease;
 }
 
-/* Nav links */
+.logo:hover {
+  color: #e6395f;
+  transform: scale(1.02);
+}
+
+.tagline {
+  font-size: 10px;
+  color: #888;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  margin-top: -2px;
+}
+
 .links {
   display: flex;
-  gap: 32px;
+  gap: 36px;
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .links li {
   cursor: pointer;
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: #333;
   position: relative;
+  padding: 8px 0;
+  letter-spacing: 0.3px;
+  transition: color 0.2s ease;
 }
 
-/* underline hover like Myntra */
+.links li:hover {
+  color: #ff3f6c;
+}
+
 .links li::after {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -6px;
+  bottom: 4px;
   width: 0;
   height: 2px;
   background: #ff3f6c;
@@ -48,37 +77,48 @@
   width: 100%;
 }
 
-/* Right actions */
 .actions {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .actions button {
-  margin-left: 14px;
-  padding: 8px 18px;
-  background: #ffffff;
-  border: 1px solid #ddd;
-  color: #333;
-  border-radius: 6px;
+  padding: 10px 20px;
+  border-radius: 8px;
   font-size: 13px;
+  font-weight: 600;
   cursor: pointer;
   transition: all 0.25s ease;
+  border: none;
 }
 
-.actions button:hover {
+.loginBtn {
+  background: transparent;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.loginBtn:hover {
   border-color: #ff3f6c;
   color: #ff3f6c;
 }
 
-/* Cart button highlight */
 .cart {
   background: #ff3f6c;
-  border: none;
-  color: #ffffff;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .cart:hover {
   background: #e6395f;
-  color: #ffffff;
+  color: #fff;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 63, 108, 0.4);
+}
+
+.cartIcon {
+  font-size: 14px;
 }

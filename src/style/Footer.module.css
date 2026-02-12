@@ -1,6 +1,175 @@
 .footer {
-  padding: 30px;
-  background: #111;
-  text-align: center;
-  opacity: 0.7;
+  background: linear-gradient(180deg, #1a1a1a 0%, #111 100%);
+  color: #ccc;
+  margin-top: 60px;
+}
+
+.top {
+  padding: 56px 48px 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.blockTitle {
+  font-size: 14px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0.5px;
+  margin: 0 0 16px 0;
+  text-transform: uppercase;
+}
+
+.linkList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.linkList li {
+  margin-bottom: 10px;
+}
+
+.footerLink {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #aaa;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.footerLink:hover {
+  color: #ff3f6c;
+}
+
+.newsletterText {
+  font-size: 13px;
+  color: #999;
+  margin: 0 0 14px 0;
+  line-height: 1.4;
+}
+
+.newsletterForm {
+  display: flex;
+  gap: 0;
+  margin-bottom: 20px;
+}
+
+.newsletterInput {
+  flex: 1;
+  padding: 10px 14px;
+  border: 1px solid #333;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  background: #222;
+  color: #fff;
+  font-size: 13px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.newsletterInput::placeholder {
+  color: #666;
+}
+
+.newsletterInput:focus {
+  border-color: #ff3f6c;
+}
+
+.newsletterBtn {
+  padding: 10px 18px;
+  background: #ff3f6c;
+  border: 1px solid #ff3f6c;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 0 6px 6px 0;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.newsletterBtn:hover {
+  background: #e6395f;
+}
+
+.social {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.socialLink {
+  color: #888;
+  font-size: 13px;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.socialLink:hover {
+  color: #ff3f6c;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+  border-top: 1px solid #2a2a2a;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.payment {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.paymentLabel {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.paymentIcons {
+  font-size: 13px;
+  color: #888;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .top {
+    padding: 40px 24px 32px;
+  }
+
+  .bottom {
+    padding: 16px 24px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
 }
